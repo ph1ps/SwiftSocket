@@ -28,11 +28,6 @@
 		37454EE21E06163D00800AE5 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 372313951DCF84E30042DA87 /* ytcpsocket.c */; };
 		37454EE31E06163D00800AE5 /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372313901DCF84D80042DA87 /* UDPClient.swift */; };
 		37454EE41E06163D00800AE5 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 372313911DCF84D80042DA87 /* yudpsocket.c */; };
-		375C48301DDC4C56008C701D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C482F1DDC4C56008C701D /* AppDelegate.swift */; };
-		375C48321DDC4C56008C701D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C48311DDC4C56008C701D /* ViewController.swift */; };
-		375C48351DDC4C56008C701D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375C48331DDC4C56008C701D /* Main.storyboard */; };
-		375C48371DDC4C56008C701D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375C48361DDC4C56008C701D /* Assets.xcassets */; };
-		375C483A1DDC4C56008C701D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375C48381DDC4C56008C701D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +41,6 @@
 		372313991DCF84EC0042DA87 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = SOURCE_ROOT; };
 		37454ECA1E06158200800AE5 /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37454EE81E0617F300800AE5 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "Sources/Info-tvOS.plist"; sourceTree = SOURCE_ROOT; };
-		375C482D1DDC4C56008C701D /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		375C482F1DDC4C56008C701D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		375C48311DDC4C56008C701D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		375C48341DDC4C56008C701D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,13 +53,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		37454EC61E06158200800AE5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		375C482A1DDC4C56008C701D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -145,7 +132,6 @@
 			children = (
 				377DAA691DCDE40200009697 /* SwiftSocket.framework */,
 				377DAA761DCDE45D00009697 /* SwiftSocket.framework */,
-				375C482D1DDC4C56008C701D /* iOS Example.app */,
 				37454ECA1E06158200800AE5 /* SwiftSocket.framework */,
 			);
 			name = Products;
@@ -212,23 +198,6 @@
 			productReference = 37454ECA1E06158200800AE5 /* SwiftSocket.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		375C482C1DDC4C56008C701D /* iOS Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 375C483E1DDC4C56008C701D /* Build configuration list for PBXNativeTarget "iOS Example" */;
-			buildPhases = (
-				375C48291DDC4C56008C701D /* Sources */,
-				375C482A1DDC4C56008C701D /* Frameworks */,
-				375C482B1DDC4C56008C701D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "iOS Example";
-			productName = "iOS Example";
-			productReference = 375C482D1DDC4C56008C701D /* iOS Example.app */;
-			productType = "com.apple.product-type.application";
-		};
 		377DAA681DCDE40200009697 /* SwiftSocket iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 377DAA6E1DCDE40200009697 /* Build configuration list for PBXNativeTarget "SwiftSocket iOS" */;
@@ -280,10 +249,6 @@
 						CreatedOnToolsVersion = 8.2;
 						ProvisioningStyle = Manual;
 					};
-					375C482C1DDC4C56008C701D = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-					};
 					377DAA681DCDE40200009697 = {
 						CreatedOnToolsVersion = 8.1;
 						LastSwiftMigration = 0810;
@@ -311,7 +276,6 @@
 				377DAA681DCDE40200009697 /* SwiftSocket iOS */,
 				377DAA751DCDE45D00009697 /* SwiftSocket macOS */,
 				37454EC91E06158200800AE5 /* SwiftSocket tvOS */,
-				375C482C1DDC4C56008C701D /* iOS Example */,
 			);
 		};
 /* End PBXProject section */
@@ -321,16 +285,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		375C482B1DDC4C56008C701D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				375C483A1DDC4C56008C701D /* LaunchScreen.storyboard in Resources */,
-				375C48371DDC4C56008C701D /* Assets.xcassets in Resources */,
-				375C48351DDC4C56008C701D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,15 +315,6 @@
 				37454EDF1E06163D00800AE5 /* Result.swift in Sources */,
 				37454EE21E06163D00800AE5 /* ytcpsocket.c in Sources */,
 				37454EE11E06163D00800AE5 /* TCPClient.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		375C48291DDC4C56008C701D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				375C48321DDC4C56008C701D /* ViewController.swift in Sources */,
-				375C48301DDC4C56008C701D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,53 +426,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		375C483C1DDC4C56008C701D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "iOS Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.danshevluk.iOS-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		375C483D1DDC4C56008C701D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "iOS Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.danshevluk.iOS-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -743,15 +641,6 @@
 			buildConfigurations = (
 				37454ED41E06158200800AE5 /* Debug */,
 				37454ED51E06158200800AE5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		375C483E1DDC4C56008C701D /* Build configuration list for PBXNativeTarget "iOS Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				375C483C1DDC4C56008C701D /* Debug */,
-				375C483D1DDC4C56008C701D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
